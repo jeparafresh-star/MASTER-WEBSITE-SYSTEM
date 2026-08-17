@@ -1,12 +1,12 @@
 export default async function KontakPage() {
   let site = {
-    email: "hello@example.com",
-    phone: "+62 000 0000 0000",
+    email: "nusaaistudio@gmail.com",
+    phone: "0852 8088 7510",
   };
 
   try {
     const response = await fetch(
-      "http://localhost:3001/api/public/website",
+      `${process.env.NEXT_PUBLIC_SITE_URL || ""}/api/site`,
       {
         cache: "no-store",
       }
@@ -15,16 +15,13 @@ export default async function KontakPage() {
     if (response.ok) {
       const data = await response.json();
 
-      if (data.site) {
-        site = {
-          email: data.site.email || site.email,
-          phone: data.site.phone || site.phone,
-        };
-      }
+      site = {
+        email: data?.email || site.email,
+        phone: data?.phone || site.phone,
+      };
     }
   } catch {
-    // API tidak tersedia.
-    // Gunakan data fallback agar halaman tetap berjalan.
+    // Gunakan data fallback jika API tidak tersedia.
   }
 
   return (
