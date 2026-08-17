@@ -1,0 +1,2 @@
+import {ArrowUpRight} from "lucide-react"; import {services} from "@/config/services";
+export default function ServiceCards(){return <div className="service-grid">{services.map(s=><article className="service-card" key={s.number}><span className="service-number">{s.number}</span><h3>{s.title}</h3><p>{s.description}</p><span className="service-link">Lihat detail <ArrowUpRight size={15}/></span></article>)}</div>}

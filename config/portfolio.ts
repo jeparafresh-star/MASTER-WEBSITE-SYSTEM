@@ -1,0 +1,1 @@
+export const portfolio = [{title:"Project Alpha",category:"Business",description:"Contoh project website bisnis."},{title:"Project Beta",category:"Portfolio",description:"Contoh project portfolio profesional."},{title:"Project Gamma",category:"Landing Page",description:"Contoh landing page campaign."}];

@@ -1,0 +1,2 @@
+import {ArrowUpRight} from "lucide-react"; import {portfolio} from "@/config/portfolio";
+export default function PortfolioGrid(){return <div className="portfolio-grid">{portfolio.map(i=><article className="portfolio-card" key={i.title}><div className="portfolio-placeholder"><span>MASTER</span></div><div className="portfolio-content"><small>{i.category}</small><h3>{i.title}</h3><p>{i.description}</p><ArrowUpRight size={17}/></div></article>)}</div>}

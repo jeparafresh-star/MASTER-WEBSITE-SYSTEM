@@ -1,0 +1,1 @@
+export default function TentangPage(){return <main className="page"><div className="container narrow"><p className="eyebrow">TENTANG</p><h1>Master Website System</h1><p className="lead">Ini adalah fondasi awal untuk sistem website reusable. Struktur dibuat terpisah antara data, komponen, dan halaman agar nantinya mudah dikendalikan oleh Master Admin.</p></div></main>}

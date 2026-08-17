@@ -1,0 +1,1 @@
+export const siteConfig = { name: "MASTER WEBSITE", tagline: "Ubah ide menjadi website digital yang nyata.", description: "Master Website System — fondasi reusable untuk membangun website profesional yang dapat dikendalikan melalui Dashboard.", email: "hello@example.com", phone: "+62 000 0000 0000" };
